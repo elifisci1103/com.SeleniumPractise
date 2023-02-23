@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class TestBase {   public WebDriver driver;
+public class TestBase {
+    public WebDriver driver;
 
     @Before
     public void setup(){
@@ -18,7 +19,7 @@ public class TestBase {   public WebDriver driver;
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
     @After
-    public void teardown(){
+   public void teardown(){
         driver.close();
     }
     public void bekle(int saniye){
