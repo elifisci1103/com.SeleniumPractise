@@ -23,10 +23,10 @@ public class TestBase {
         driver.quit();
     }
     public void bekle(int saniye){
-        try {
-            Thread.sleep(saniye*1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+       try {
+           Thread.sleep(saniye*1000);
+       } catch (InterruptedException e) {
+           // throw new RuntimeException(e);
         }
     }
 }

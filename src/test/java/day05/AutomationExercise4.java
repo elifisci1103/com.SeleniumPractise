@@ -15,11 +15,11 @@ public class AutomationExercise4 extends TestBase {
         driver.get(" https://www.amazon.com/");
        // 2 - Sag ust bolumde bulunan “Account & Lists”menusunun acilmasi icin
        // mouse’u bu menunun ustune getirin
-        WebElement accountList = driver.findElement(By.id("nav-al-title"));
+        WebElement accountList = driver.findElement(By.xpath("//span[text()='Account & Lists']"));
         Actions actions = new Actions(driver);
-        actions.moveToElement(accountList);
+        actions.moveToElement(accountList).perform();
 
        // 4 - Acilan sayfada “Your Lists”yazisi oldugunu test edin
-      //  WebElement yazi=driver.findElement(By.xpath("//div[text()='Your Lists']"));
-      //  Assert.assertTrue(yazi.isDisplayed());
+        WebElement yazi=driver.findElement(By.id("nav-al-title"));
+       Assert.assertTrue(yazi.isDisplayed());
     }}
