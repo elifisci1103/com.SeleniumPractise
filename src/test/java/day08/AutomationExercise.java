@@ -36,5 +36,4 @@ public class AutomationExercise extends TestBaseClass {
        wait.until(ExpectedConditions.visibilityOf(itsBack));
       Assert.assertTrue(itsBack.isDisplayed());
 
-
 }}
